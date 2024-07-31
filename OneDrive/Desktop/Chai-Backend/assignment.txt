@@ -1,0 +1,5 @@
+what is payload ?
+what is midddleware ?
+what is toekn ?
+what is jwt ?
+what is timestamps ? 
