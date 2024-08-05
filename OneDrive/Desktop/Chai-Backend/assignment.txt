@@ -3,3 +3,58 @@ what is midddleware ?
 what is toekn ?
 what is jwt ?
 what is timestamps ? 
+
+HTTP - Hyper Text Transfer Protocol
+what are HTTP headers ? 
+metadata--> key-value sent along with request and response
+metadata ? -> metadata like file name , file size , file domain 
+--> caching , authentication, manage state 
+  x-prefix -> 2012(x-deprecated)
+
+request headers -> from clinet
+response headers -> from server
+response headers -> encoding / comfression
+payload headers -> data
+
+
+Most common headers
+Accept -> application / json
+user -> agent
+authorization
+content type
+cookie 
+cache-control
+
+HTTP method
+-->Basic set of operation that can be used to internet with server
+
+GET -> retrive and response
+HEAD -> no message body(response headers only)
+OPTION -> what operation are available
+TRACE -> loopback test (get some data)
+DELETE -> remove a resource
+PUT - replace a resource
+POST -> interact a resource
+PATCH -> change part of resource
+
+
+HTTP status code 
+1xx - information
+2xx - success
+3xx - redirection
+4xx - clinet occure
+5xx - server error
+
+100 : continue
+102 : processing
+200 : ok
+201 : created
+202 : accepted
+307 : temporory redirect
+308 : permanent redirect
+400 : bad request
+401 : unauthorized 
+402 : payment required
+404 : not found
+500 : INternal server error
+504 : gate way time out
