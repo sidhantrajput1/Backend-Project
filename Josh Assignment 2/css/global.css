@@ -1,0 +1,108 @@
+/*
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1 
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px 
+
+--- 02 COLORS
+
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+:root {
+  --background-color: #e6e6e6;
+  --primary-bg-color: #ffb400;
+  --font-color-primary: #2b2b2b;
+  --font-color-secondary: #767676;
+}
+
+html {
+  /* by default 1rem = 16px */
+  /* 10px /16px => 62.5% */
+  font-size: 62.5%;
+  font-family: "Open Sans",sans-serif,inter;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* font-family: Inter, sans-serif; */
+  line-height: 1;
+  font-weight: 400;
+  background-color: var(--background-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  max-width: 129rem;
+  margin: auto;
+  padding: 0rem 1.6rem 0 2.8rem;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  grid-template-columns: repeat(3,auto);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.heading-secondary,
+.heading-primary,
+.heading-tertairy {
+  font-weight: 700;
+  color: var(--font-color-primary);
+  line-height: 1.2;
+}
